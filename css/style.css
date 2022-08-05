@@ -1,0 +1,271 @@
+/* genel kenar boşlukları alındı */
+body {
+  margin: 0 auto;
+}
+
+
+.header {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; /* üst navdaki liste noktaları alındı */
+  overflow: hidden;
+  position: fixed; 
+  opacity: 0.75; /* 0.75 transparan */
+  top: 0;
+  width: 100%;
+  height: 54px;
+  /* margin-left:2px; */
+  /* line-height: 11px; */
+   
+}
+
+  .headerli {
+    float:left;
+  }
+
+    .headerli a {    
+      display: block;
+      color: black;
+      text-align: center;
+      font-size: 15px;
+      padding-left: 0;
+      padding-top: 21px;
+      text-decoration: none;
+      height: 33px;
+      margin-left: 20px;
+      /* display: inline-block; */
+    }
+      .headerli a:hover {
+        text-decoration: underline;
+      }
+
+     
+.headerpic{  /* üst nav a img ekleneceği için ayrı bir class oluşturuldu */
+  display: block; /* diğer etiketler gibi blok yapıldı */
+  float: right;   /* sağa yaslandı */
+  text-decoration: none; /* alt çizgi kaldırıldı */
+  height: 33px;
+  margin-top:15px ;
+}
+
+/* Sign in butonu orjinali ile birbir örneğine bakılarak oluşturuldu, sağa yaslandı,radius,color,border,genişlik ve yükselti ayarları yapıldı */ 
+.headerbtn {
+  float: right;
+  background-color: #1a73e8;
+  border-radius: 1px;
+  color: white;
+  width: 80px;
+  height: 30px;
+  border: 1px solid #4285f4;
+  font-weight: bold;
+  margin: 15px 20px;     
+}
+.headerbtn:hover{
+  background-color:#4285f4 ;
+  border: #4285f4;
+}
+
+/*************************/
+.container {
+  text-align: center;
+  margin: 200px auto; /* alt üst ve sağ soldan logoyu kapsayan bölgenin yeri ayarlandı */
+ 
+}
+
+
+.search-area {
+  background: #fff;
+  display: flex;
+  border: 1px solid #dfe1e5;
+  box-shadow: none;
+  z-index: 3;
+  width: 600px;
+  height: 44px; 
+  margin: -180px auto 20px auto; 
+  /* background-color: #9aa0a6; */
+  border-radius: 25px;
+  
+}
+
+.search-area:hover {
+box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
+}
+
+.search {
+  /* flex: 1; */
+  display: flex;
+  padding: 5px 8px 0 16px;
+  padding-left: 14px;
+  /* background-color: rgb(177, 109, 27); */
+}
+
+.search-img {
+  display: flex;
+  align-items: center;
+  padding-right: 13px;
+  margin-top: -5px;
+}
+
+/* search by voice iconu buton üstünde kullanıldı ve yeri absolute olarak right top margin-left,margin-top propertyleriyle ayarlandı */
+.search-voicebtn {
+  /* display: flex; */
+  align-items: center;
+  position: absolute;
+  right: auto;
+  top: auto;
+  margin-left: 510px;
+  margin-top: 4px;
+}
+
+/* butonun büyüklüğü ayarlandı imleç gelince title çıkarıldı */
+  .boyutlandirma img {
+    max-width: 20px;
+    height: 20px;
+    cursor: pointer;    
+    }
+
+.search-img span {
+  color: #9aa0a6;
+  height: 20px;
+  width: 20px;
+  margin-top: 0px;
+  display: inline-block;
+  fill: currentColor;
+  line-height: 24px;
+  position: relative;
+}
+
+.input-enter {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.input-area {
+  
+  /* margin-top: 4px;   */
+  /* padding-top: 67px; */
+  /* white-space: pre; */
+  display: flex;
+  font: 16px arial, sans-serif;
+  line-height: 34px;
+  height: 34px !important;
+  display: block;
+  /* border-radius: 25px; */
+  /* border: transparent; */ 
+}
+
+.input {
+ 
+  margin: auto auto ;
+  /* padding-bottom: 5px; */
+  color: rgba(0, 0, 0, 0.87);
+  word-wrap: break-word;
+  outline: none;
+  /* display: flex; */
+  /* flex: 100%; */
+  margin-top: -68px;
+  font: 16px arial, sans-serif;
+  width: 480px;
+  line-height: 34px;
+  height: 34px !important;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  text-align: start;
+  appearance: textfield;
+  cursor: text;
+  
+}
+
+/*******************/
+.buttons {
+  width: 480px;
+  margin: 20px auto;
+  font-family: arial, sans-serif;
+  text-align: center;
+  
+}
+
+/* buton size ve color ödev açıklamasında istendiği gibi ayarlandı margin ve paddingler ile yeri ayarlandı */
+.googlesearch {
+  height: 36px;
+  margin: 11px 7px;
+  padding: 0px 16px;
+  line-height: 27px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid transparent;
+  color:#5F6368;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.feelinglucky {
+  height: 36px;
+  padding: 0px 16px;
+  line-height: 27px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid transparent;
+  color:#5F6368;
+  font-size: 14px;
+  border-radius: 4px;
+  
+}
+
+.footer {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; /* liste noktasını kaldırır */
+  overflow: hidden;
+  border: 1px solid #dfe1e5;
+  border-top: 1px solid #dadce0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-left: -8px;
+  line-height: 11px;
+  background-color: #f2f2f2;/* arka plan rengi istenilen gibi yapıldı*/
+
+}
+ /* hazır yapılanlar haricinde eklenen propertyler ile blok şeklide, noktasız padding margin text alignlar ile hizalanmış görünüm elde edildi  */
+.footerli {
+  float: left;
+ 
+}
+
+ .footerli a { 
+  display: block;
+  color: #5f6368;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  margin-left: 13px;
+  margin-right: -20px;
+   
+} 
+
+.footerli a:hover {
+  text-decoration: underline;
+}
+
+svg:not(:root) {
+   overflow: hidden;
+} 
+
+
+
+
+
+  
+
